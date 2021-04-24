@@ -1,6 +1,9 @@
 import React from "react";
-import { createStore } from "redux";
+import ReduxApp from "./redux/ReduxApp";
 
+//**Within single Component**//
+/* 
+import { createStore } from "redux";
 // Actions
 const inc = () => {
   return { type: "INC" };
@@ -34,12 +37,15 @@ const store = createStore(reducer);
 // Dispatch
 store.dispatch(inc());
 store.dispatch(dec());
-store.dispatch(dec());
+store.dispatch(dec()); */
+
+//**Within single Component**//
 
 const App = () => {
   return (
     <>
       <h1>App - Redux</h1>
+      <ReduxApp />
     </>
   );
 };
